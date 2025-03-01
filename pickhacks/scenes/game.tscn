@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://rtnh1hq518bt"]
+[gd_scene load_steps=11 format=3 uid="uid://rtnh1hq518bt"]
 
 [ext_resource type="Texture2D" uid="uid://bkq7hotqg2qvw" path="res://brackeys_platformer_assets/sprites/world_tileset.png" id="1_1lt05"]
 [ext_resource type="Texture2D" uid="uid://brnwabce8qscq" path="res://pixel_art/Havener_pix.png" id="1_7agrl"]
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_pe0ea"]
 [ext_resource type="PackedScene" uid="uid://ccgkccx1wtwdp" path="res://scenes/player.tscn" id="2_ti2ga"]
 [ext_resource type="PackedScene" uid="uid://c7bcjq34w0kkl" path="res://scenes/test_icon.tscn" id="3_orsjh"]
+[ext_resource type="FontFile" uid="uid://d25arwb2y148n" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="4_578xl"]
 [ext_resource type="Script" path="res://scripts/parallax_background.gd" id="5_8lvbb"]
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="8_2ih01"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v53oa"]
 texture = ExtResource("1_1lt05")
@@ -147,16 +149,15 @@ sources/0 = SubResource("TileSetAtlasSource_v53oa")
 [node name="game" type="Node2D"]
 script = ExtResource("1_pe0ea")
 
-[node name="StaticBody2D" parent="." instance=ExtResource("3_orsjh")]
-process_priority = 2
-z_index = 5
-position = Vector2(370, -43)
-scale = Vector2(0.0828664, 0.0597279)
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_ik885")
 format = 2
-layer_0/tile_data = PackedInt32Array(65530, 0, 0, 65531, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 65529, 0, 0, 65528, 0, 0, 65527, 0, 0, 65526, 0, 0, 65525, 0, 0, 65524, 0, 0, 65523, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, 30, 0, 0, 31, 0, 0, 32, 0, 0, 33, 0, 0)
+layer_0/tile_data = PackedInt32Array(65530, 0, 0, 65531, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 65529, 0, 0, 65528, 0, 0, 65527, 0, 0, 65526, 0, 0, 65525, 0, 0, 65524, 0, 0, 65523, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, 30, 0, 0, 31, 0, 0, 32, 0, 0, 33, 0, 0, 16, 0, 0)
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_ik885")
+format = 2
+layer_0/tile_data = PackedInt32Array(1048563, 393216, 0, 1048564, 393216, 0, 1048565, 393216, 0, 1048566, 393216, 0, 1048567, 393216, 0, 1048568, 393216, 0, 1048569, 393216, 0, 1048570, 393216, 0, 1048571, 393216, 0, 1048572, 393216, 0, 1048573, 393216, 0, 1048574, 393216, 0, 1048575, 393216, 0, 983040, 393216, 0, 983041, 393216, 0, 983042, 393216, 0, 983043, 393216, 0, 983044, 393216, 0, 983045, 393216, 0, 983046, 393216, 0, 983047, 393216, 0, 983048, 393216, 0, 983049, 393216, 0, 983050, 393216, 0, 983051, 393216, 0, 983052, 393216, 0, 983053, 393216, 0, 983054, 393216, 0, 983055, 393216, 0, 983056, 393216, 0, 983057, 393216, 0, 983058, 393216, 0, 983059, 393216, 0, 983060, 393216, 0, 983061, 393216, 0, 983062, 393216, 0, 983063, 393216, 0, 983064, 393216, 0, 983065, 393216, 0, 983066, 393216, 0, 983067, 393216, 0, 983068, 393216, 0, 983069, 393216, 0, 983070, 393216, 0, 983071, 393216, 0, 983072, 393216, 0, 983073, 393216, 0)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_ti2ga")]
 position = Vector2(23, -6)
@@ -164,6 +165,16 @@ position = Vector2(23, -6)
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(25, -58)
 zoom = Vector2(4, 4)
+
+[node name="score_label" type="Label" parent="CharacterBody2D"]
+unique_name_in_owner = true
+offset_left = -115.0
+offset_top = -136.0
+offset_right = -75.0
+offset_bottom = -113.0
+theme_override_fonts/font = ExtResource("4_578xl")
+theme_override_font_sizes/font_size = 8
+text = "Score: 0"
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 script = ExtResource("5_8lvbb")
@@ -174,3 +185,16 @@ script = ExtResource("5_8lvbb")
 position = Vector2(58.5, -77.25)
 scale = Vector2(0.511667, 0.511667)
 texture = ExtResource("1_7agrl")
+
+[node name="Game_manager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("8_2ih01")
+
+[node name="Area2D" parent="." instance=ExtResource("3_orsjh")]
+position = Vector2(241, -7)
+
+[node name="Area2D2" parent="." instance=ExtResource("3_orsjh")]
+position = Vector2(203, -8)
+
+[node name="Area2D3" parent="." instance=ExtResource("3_orsjh")]
+position = Vector2(302, -7)

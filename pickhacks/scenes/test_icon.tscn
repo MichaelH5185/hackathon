@@ -1,11 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7bcjq34w0kkl"]
+[gd_scene load_steps=4 format=3 uid="uid://c7bcjq34w0kkl"]
 
-[ext_resource type="Texture2D" uid="uid://bsydvuo5i0y3o" path="res://pxArt__2_-removebg-preview.png" id="1_sftch"]
+[ext_resource type="Script" path="res://scenes/test_icon.gd" id="1_0e20f"]
+[ext_resource type="Texture2D" uid="uid://bsydvuo5i0y3o" path="res://brackeys_platformer_assets/pxArt__2_-removebg-preview.png" id="1_sftch"]
 
-[node name="StaticBody2D" type="StaticBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1el1k"]
+size = Vector2(6, 8)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_0e20f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.9375, -1.38458)
+scale = Vector2(0.0149027, 0.0149027)
 texture = ExtResource("1_sftch")
 flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -2)
+shape = SubResource("RectangleShape2D_1el1k")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
