@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7bcjq34w0kkl"]
+
+[ext_resource type="Texture2D" uid="uid://bsydvuo5i0y3o" path="res://pxArt__2_-removebg-preview.png" id="1_sftch"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sftch")
+flip_h = true
