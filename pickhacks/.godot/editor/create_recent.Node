@@ -1,3 +1,8 @@
+Sprite2D
+ParallaxLayer
+ParallaxBackground
+CollisionShape2D
+StaticBody2D
 AnimatedSprite2D
 TileMap
 Area2D
