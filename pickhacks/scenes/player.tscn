@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccgkccx1wtwdp"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_csrtr"]
+[ext_resource type="Texture2D" uid="uid://devnmsjtlyf5p" path="res://dinosaur-26.png" id="1_ircwh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_whggo"]
+radius = 20.8806
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_csrtr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, -1)
+scale = Vector2(0.0505155, 0.0430075)
+texture = ExtResource("1_ircwh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 3)
+shape = SubResource("CircleShape2D_whggo")
