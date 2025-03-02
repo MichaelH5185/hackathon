@@ -191,6 +191,8 @@ texture = ExtResource("1_7agrl")
 unique_name_in_owner = true
 script = ExtResource("8_2ih01")
 
+[node name="Node" type="Node" parent="Game_manager"]
+
 [node name="Area2D" parent="." instance=ExtResource("3_orsjh")]
 position = Vector2(241, -7)
 

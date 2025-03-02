@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://dta0csrl55af0"]
+
+[ext_resource type="Script" path="res://control.gd" id="1_yoqch"]
+[ext_resource type="Texture2D" uid="uid://bvrsm761674v" path="res://undefined - Imgur.png" id="2_sinax"]
+[ext_resource type="FontFile" uid="uid://d38nb74egthlt" path="res://brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="3_rtoqo"]
+[ext_resource type="FontFile" uid="uid://d25arwb2y148n" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="4_d3e7p"]
+
+[node name="Home_Page" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_yoqch")
+
+[node name="Undefined-Imgur" type="Sprite2D" parent="."]
+position = Vector2(484, -1)
+scale = Vector2(0.452006, 0.44)
+texture = ExtResource("2_sinax")
+
+[node name="start_game" type="Button" parent="."]
+offset_left = -76.0
+offset_top = -44.0
+offset_right = 88.0
+offset_bottom = -17.0
+theme_override_fonts/font = ExtResource("4_d3e7p")
+theme_override_font_sizes/font_size = 8
+action_mode = 0
+keep_pressed_outside = true
+text = "START GAME"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="Welcom" type="Label" parent="."]
+offset_left = -109.0
+offset_top = -75.0
+offset_right = 109.0
+offset_bottom = -52.0
+theme_override_fonts/font = ExtResource("3_rtoqo")
+text = "WELCOME MINERS"
+
+[node name="leader_board" type="Button" parent="."]
+offset_left = -70.0
+offset_top = -2.0
+offset_right = 76.0
+offset_bottom = 22.0
+theme_override_fonts/font = ExtResource("4_d3e7p")
+theme_override_font_sizes/font_size = 8
+text = "LEADERBOARD"
+flat = true
+
+[connection signal="button_up" from="start_game" to="." method="_on_start_game_button_up"]
+[connection signal="pressed" from="start_game" to="." method="_on_start_game_pressed"]

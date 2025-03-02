@@ -1,8 +1,5 @@
+res://control.gd
 res://scenes/game.tscn
-res://scripts/game.gd
 res://scenes/player.tscn
 res://scenes/test_icon.tscn
-res://scripts/test_icon.gd
-res://scenes/test_icon.gd
-res://scripts/game_manager.gd
-res://scripts/regular.gd
+res://scenes/home_page.tscn
