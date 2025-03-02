@@ -1,3 +1,6 @@
+Node
+OptionButton
+Control
 Button
 Label
 Camera2D
@@ -5,8 +8,6 @@ CollisionShape2D
 Sprite2D
 Area2D
 CollisionPolygon2D
-Control
-Control
 ParallaxLayer
 ParallaxBackground
 Node2D

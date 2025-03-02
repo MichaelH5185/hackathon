@@ -9,6 +9,9 @@ extends ParallaxBackground
 
 var game_won = false
 
+func set_winning_score(win:int):
+	winning_score = win
+
 func _process(delta: float) -> void:
 	if game_won:
 		return

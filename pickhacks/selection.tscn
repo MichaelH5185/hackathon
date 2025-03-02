@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm8unp0jtlo73"]
+
+[ext_resource type="Script" path="res://selection.gd" id="1_0gjs4"]
+[ext_resource type="Texture2D" uid="uid://bijup3qa1ywag" path="res://darkness_arisen.png" id="2_tuben"]
+[ext_resource type="FontFile" uid="uid://d25arwb2y148n" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="3_rn037"]
+
+[node name="selection" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0gjs4")
+
+[node name="DarknessArisen" type="Sprite2D" parent="."]
+position = Vector2(-8, -16)
+scale = Vector2(0.265278, 0.265278)
+texture = ExtResource("2_tuben")
+
+[node name="start_game" type="Button" parent="."]
+offset_left = -83.0
+offset_top = 33.0
+offset_right = 81.0
+offset_bottom = 60.0
+theme_override_fonts/font = ExtResource("3_rn037")
+theme_override_font_sizes/font_size = 8
+action_mode = 0
+keep_pressed_outside = true
+text = "START GAME"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = -81.0
+offset_top = -76.0
+offset_right = 85.0
+offset_bottom = -56.0
+theme_override_fonts/font = ExtResource("3_rn037")
+theme_override_font_sizes/font_size = 8
+item_count = 4
+popup/item_0/text = "-Select Career-"
+popup/item_0/disabled = true
+popup/item_1/text = "baccalaureate"
+popup/item_1/id = 1
+popup/item_2/text = "Masters"
+popup/item_2/id = 2
+popup/item_3/text = "PHD"
+popup/item_3/id = 3
+
+[connection signal="pressed" from="start_game" to="." method="_on_start_game_pressed"]

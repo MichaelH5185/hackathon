@@ -15,6 +15,14 @@ run/main_scene="res://scenes/home_page.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameMan="*res://game_man.gd"
+
+[gui]
+
+theme/default_font_antialiasing=0
+
 [input]
 
 jump={

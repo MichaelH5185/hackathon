@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0m4sl5rugpbt"]
+
+[ext_resource type="Script" path="res://scenes/selection_page.gd" id="1_gr4pw"]
+[ext_resource type="Texture2D" uid="uid://bijup3qa1ywag" path="res://darkness_arisen.png" id="2_mmft5"]
+[ext_resource type="FontFile" uid="uid://d25arwb2y148n" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="3_fyiop"]
+
+[node name="selection_page" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_gr4pw")
+
+[node name="OptionButton" type="OptionButton" parent="."]
+offset_left = -90.0
+offset_top = -59.0
+offset_right = 71.0
+offset_bottom = -39.0
+theme_override_fonts/font = ExtResource("3_fyiop")
+theme_override_font_sizes/font_size = 8
+selected = 0
+item_count = 4
+popup/item_0/text = "-Select Career-"
+popup/item_0/disabled = true
+popup/item_0/separator = true
+popup/item_1/text = "Baccalaureate"
+popup/item_1/id = 1
+popup/item_2/text = "Masters"
+popup/item_2/id = 2
+popup/item_3/text = "PHD"
+popup/item_3/id = 3
+
+[node name="DarknessArisen" type="Sprite2D" parent="."]
+position = Vector2(-8, -16)
+scale = Vector2(0.265278, 0.265278)
+texture = ExtResource("2_mmft5")
+
+[node name="start_game" type="Button" parent="."]
+offset_left = -88.0
+offset_top = 43.0
+offset_right = 76.0
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource("3_fyiop")
+theme_override_font_sizes/font_size = 8
+action_mode = 0
+keep_pressed_outside = true
+text = "CONFIRM CONFIGURATION"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="start_game" to="." method="_on_start_game_pressed"]

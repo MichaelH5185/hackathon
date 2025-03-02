@@ -12,7 +12,6 @@ func _on_body_entered(body) -> void:
 	curr_pos = randomizeLocation(position.x, "x")
 	while (curr_pos >= prev_pos - 70 && curr_pos <= prev_pos + 70):
 		curr_pos = randomizeLocation(position.x, "x")
-		print(str(curr_pos))
 	position.x = curr_pos
 	game_manager.increase_gpa(4)
 	prev_pos = curr_pos
@@ -22,13 +21,11 @@ func _process(delta: float) -> void:
 	speed = game_manager.get_speed()
 	position.x -= speed
 	if position.x < -200:
-		print("voided")
 		curr_pos = randomizeLocation(position.x, "x")
 		while (curr_pos >= prev_pos - 70 && curr_pos <= prev_pos + 70 ):
 			curr_pos = randomizeLocation(position.x, "x")
 		position.x = curr_pos
 		prev_pos = curr_pos
-		print("voided")
 		position.y = randomizeLocation(position.y, "y")
 	#if position.x < -200:
 		#position.x = 200
@@ -42,5 +39,5 @@ func randomizeLocation(pos, plane):
 	if plane == "x":
 		pos = randi() % 251 + 175
 	else:
-		pos = -(randi() % 75)
+		pos = -(randi() % 75 + 15)
 	return pos
