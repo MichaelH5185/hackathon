@@ -1,22 +1,30 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1740910396
+::res://::1740922738
 CONGRATULATIONS! YOU HAVE COMPLETED YOUR DEGREE!.png::CompressedTexture2D::5126345226449565108::1740891159::1740891215::1::::<><>::
-control.gd::GDScript::-1::1740889147::0::1::::<>Control<>::
+control.gd::GDScript::-1::1740922070::0::1::::<>Control<>::
 darkness_arisen.png::CompressedTexture2D::2967753454754188990::1740892072::1740892113::1::::<><>::
+dark_havener.png::CompressedTexture2D::1701557330761667745::1740922471::1740922472::1::::<><>::
+data.100.translation::OptimizedTranslation::1573731470506848089::1740921368::0::1::::<><>::
+data.csv::Translation::4167856726161522594::1740921368::1740921368::1::::<><>::
+degree.png::CompressedTexture2D::6249627192060894526::1740922729::1740922739::1::::<><>::
 dinosaur-26.png::CompressedTexture2D::7484181069101975983::1740850980::1740891216::1::::<><>::
 game.gd::GDScript::-1::1740907811::0::1::::<>Node2D<>::
+game_man.gd::GDScript::-1::1740914685::0::1::::<>Node<>::
+game_man.tscn::PackedScene::4125437495478239704::1740922296::0::1::::<><>::res://game_man.gd
 icon.svg::CompressedTexture2D::8671442631864542310::1740850980::1740891215::1::::<><>::
 node_2d.gd::GDScript::-1::1740904163::0::1::::<>Node2D<>::
 pxArt (3).png::CompressedTexture2D::5316216738070270320::1740886900::1740891216::1::::<><>::
+selection.gd::GDScript::-1::1740914953::0::1::::<>Control<>::
+selection.tscn::PackedScene::8070891022700878716::1740922296::0::1::::<><>::res://selection.gd<>uid://bijup3qa1ywag::::res://darkness_arisen.png<>uid://d25arwb2y148n::::res://brackeys_platformer_assets/fonts/PixelOperator8.ttf
 sky.png::CompressedTexture2D::908462834802248095::1740909542::1740909653::1::::<><>::
 spikey_boy.gd::GDScript::-1::1740906789::0::1::::<>Area2D<>::
 spikey_boy.png::CompressedTexture2D::3728125474783358913::1740894155::1740894155::1::::<><>::
-spikey_boy.tscn::PackedScene::8314435825507695343::1740910388::0::1::::<><>::uid://btd6xgi01sobx::::res://spikey_boy.png<>res://spikey_boy.gd
+spikey_boy.tscn::PackedScene::8314435825507695343::1740922296::0::1::::<><>::uid://btd6xgi01sobx::::res://spikey_boy.png<>res://spikey_boy.gd
 undefined - Imgur.png::CompressedTexture2D::7674572742180130886::1740879119::1740891215::1::::<><>::
 ::res://brackeys_platformer_assets/::1740891215
 LICENSE & CREDITS.txt::TextFile::-1::1740850980::0::1::::<><>::
 pxArt__2_-removebg-preview.png::CompressedTexture2D::3699585661394450222::1740859931::1740891215::1::::<><>::
-::res://brackeys_platformer_assets/fonts/::1740891215
+::res://brackeys_platformer_assets/fonts/::1740922738
 PixelOperator8-Bold.ttf::FontFile::9193466971265099101::1740850980::1740891215::1::::<><>::
 PixelOperator8.ttf::FontFile::9116323678742746707::1740850980::1740891215::1::::<><>::
 ::res://brackeys_platformer_assets/music/::1740899668
@@ -36,6 +44,7 @@ platforms.png::CompressedTexture2D::425620376193406870::1740850980::1740891215::
 slime_green.png::CompressedTexture2D::8968606614268492630::1740850980::1740891215::1::::<><>::
 slime_purple.png::CompressedTexture2D::7676337337306377710::1740850980::1740891215::1::::<><>::
 world_tileset.png::CompressedTexture2D::3123295373878493592::1740850980::1740891215::1::::<><>::
+::res://data/::1740915929
 ::res://made_depend/::1740891215
 idle.png::CompressedTexture2D::8349049425686826972::1740857616::1740891215::1::::<><>::
 jump.png::CompressedTexture2D::6513808615211895096::1740859680::1740891215::1::::<><>::
@@ -46,19 +55,20 @@ Havener_pix.png::CompressedTexture2D::3607803766022740396::1740852050::174089121
 pxArt.png::CompressedTexture2D::3865548898136008701::1740886900::1740891215::1::::<><>::
 Rock_item.png::CompressedTexture2D::742768567133158355::1740881366::1740891215::1::::<><>::
 sky.png::CompressedTexture2D::2155257186996865824::1740909334::1740909653::1::::<><>::
-::res://scenes/::1740910388
-fail.tscn::PackedScene::38518851513213596::1740910388::0::1::::<><>::res://node_2d.gd<>uid://bv54ilg7lctw1::::res://scenes/image.png<>uid://d25arwb2y148n::::res://brackeys_platformer_assets/fonts/PixelOperator8.ttf
-game.tscn::PackedScene::1233236717825836201::1740910388::0::1::::<><>::uid://bkq7hotqg2qvw::::res://brackeys_platformer_assets/sprites/world_tileset.png<>res://game.gd<>uid://ccgkccx1wtwdp::::res://scenes/player.tscn<>uid://bvcra4ty5cslp::::res://pixel_art/pxArt.png<>uid://c7bcjq34w0kkl::::res://scenes/test_icon.tscn<>uid://d25arwb2y148n::::res://brackeys_platformer_assets/fonts/PixelOperator8.ttf<>res://scripts/parallax_background.gd<>uid://ch0hkv14d1f65::::res://pxArt (3).png<>res://scripts/game_manager.gd<>uid://dqptsqbso44br::::res://spikey_boy.tscn<>uid://5ya1hiydo6wy::::res://pixel_art/sky.png
-home_page.tscn::PackedScene::8494372548831926579::1740910388::0::1::::<><>::res://control.gd<>uid://bijup3qa1ywag::::res://darkness_arisen.png<>uid://d38nb74egthlt::::res://brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf<>uid://d25arwb2y148n::::res://brackeys_platformer_assets/fonts/PixelOperator8.ttf
+::res://scenes/::1740922374
+fail.tscn::PackedScene::38518851513213596::1740922296::0::1::::<><>::res://node_2d.gd<>uid://bv54ilg7lctw1::::res://scenes/image.png<>uid://d25arwb2y148n::::res://brackeys_platformer_assets/fonts/PixelOperator8.ttf
+game.tscn::PackedScene::1233236717825836201::1740922296::0::1::::<><>::uid://bkq7hotqg2qvw::::res://brackeys_platformer_assets/sprites/world_tileset.png<>res://game.gd<>uid://ccgkccx1wtwdp::::res://scenes/player.tscn<>uid://bvcra4ty5cslp::::res://pixel_art/pxArt.png<>uid://c7bcjq34w0kkl::::res://scenes/test_icon.tscn<>uid://d25arwb2y148n::::res://brackeys_platformer_assets/fonts/PixelOperator8.ttf<>res://scripts/parallax_background.gd<>uid://ch0hkv14d1f65::::res://pxArt (3).png<>res://scripts/game_manager.gd<>uid://dqptsqbso44br::::res://spikey_boy.tscn<>uid://5ya1hiydo6wy::::res://pixel_art/sky.png
+home_page.tscn::PackedScene::8494372548831926579::1740922374::0::1::::<><>::res://control.gd<>uid://bijup3qa1ywag::::res://darkness_arisen.png<>uid://d38nb74egthlt::::res://brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf<>uid://d25arwb2y148n::::res://brackeys_platformer_assets/fonts/PixelOperator8.ttf
 image.png::CompressedTexture2D::3924093400349453714::1740903611::1740903612::1::::<><>::
 jesse_hall.jpg::CompressedTexture2D::3359837347247764196::1740903468::1740903468::1::::<><>::
-player.tscn::PackedScene::4926216204490794565::1740910388::0::1::::<><>::res://scripts/player.gd<>uid://dq7lvhuyt7soi::::res://made_depend/idle.png<>uid://cy2lqgrc3il5q::::res://made_depend/jump.png<>uid://dmtptnq5bqxrx::::res://made_depend/running.png
-selection_page.tscn::PackedScene::4167707869673509761::1740910388::0::1::::<><>::res://control.gd<>uid://bijup3qa1ywag::::res://darkness_arisen.png<>uid://d25arwb2y148n::::res://brackeys_platformer_assets/fonts/PixelOperator8.ttf
-test_icon.gd::GDScript::-1::1740907250::0::1::::<>Area2D<>::
-test_icon.tscn::PackedScene::7021087132664122319::1740910388::0::1::::<><>::res://scenes/test_icon.gd<>uid://bsydvuo5i0y3o::::res://brackeys_platformer_assets/pxArt__2_-removebg-preview.png
-winner.tscn::PackedScene::6820650610097487518::1740910388::0::1::::<><>::uid://cfbiflnidrnpk::::res://CONGRATULATIONS! YOU HAVE COMPLETED YOUR DEGREE!.png
-::res://scripts/::1740907825
-game_manager.gd::GDScript::-1::1740907825::0::1::::<>Node<>::
-parallax_background.gd::GDScript::-1::1740906852::0::1::::<>ParallaxBackground<>::
+player.tscn::PackedScene::4926216204490794565::1740922295::0::1::::<><>::res://scripts/player.gd<>uid://dq7lvhuyt7soi::::res://made_depend/idle.png<>uid://cy2lqgrc3il5q::::res://made_depend/jump.png<>uid://dmtptnq5bqxrx::::res://made_depend/running.png
+scoreboard.gd::GDScript::-1::1740922275::0::1::::<>Node2D<>::
+scoreboard.tscn::PackedScene::6332681464251215138::1740922297::0::1::::<><>::res://scenes/scoreboard.gd<>uid://bijup3qa1ywag::::res://darkness_arisen.png<>uid://d25arwb2y148n::::res://brackeys_platformer_assets/fonts/PixelOperator8.ttf
+test_icon.gd::GDScript::-1::1740915082::0::1::::<>Area2D<>::
+test_icon.tscn::PackedScene::7021087132664122319::1740922296::0::1::::<><>::res://scenes/test_icon.gd<>uid://bsydvuo5i0y3o::::res://brackeys_platformer_assets/pxArt__2_-removebg-preview.png
+winner.tscn::PackedScene::6820650610097487518::1740922296::0::1::::<><>::uid://cfbiflnidrnpk::::res://CONGRATULATIONS! YOU HAVE COMPLETED YOUR DEGREE!.png
+::res://scripts/::1740916221
+game_manager.gd::GDScript::-1::1740916221::0::1::::<>Node<>::
+parallax_background.gd::GDScript::-1::1740911328::0::1::::<>ParallaxBackground<>::
 player.gd::GDScript::-1::1740905377::0::1::::<>CharacterBody2D<>::
 regular.gd::GDScript::-1::1740875930::0::1::::<>Node<>::

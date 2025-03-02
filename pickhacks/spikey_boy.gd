@@ -13,11 +13,10 @@ func _process(delta: float) -> void:
 	s = game_manager.get_speed()
 	position.x -= s
 	if(position.x < -270):
-		position.x = 250
+		position.x = 350
 
 func _on_body_entered(body) -> void:
 	game_manager.decrease_gpa(0)# Gives them a D
-	print("hit me")
-	position.x = 250
+	position.x = 380
 	game.reset_game()
 	

@@ -19,9 +19,9 @@ texture = ExtResource("2_b7mli")
 
 [node name="start_game" type="Button" parent="."]
 layout_mode = 0
-offset_left = -76.0
+offset_left = -81.0
 offset_top = -44.0
-offset_right = 88.0
+offset_right = 83.0
 offset_bottom = -17.0
 theme_override_fonts/font = ExtResource("4_d3e7p")
 theme_override_font_sizes/font_size = 8
@@ -43,14 +43,14 @@ text = "WELCOME MINERS"
 
 [node name="leader_board" type="Button" parent="."]
 layout_mode = 0
-offset_left = -70.0
+offset_left = -83.0
 offset_top = -2.0
-offset_right = 76.0
-offset_bottom = 22.0
+offset_right = 85.0
+offset_bottom = 25.0
 theme_override_fonts/font = ExtResource("4_d3e7p")
 theme_override_font_sizes/font_size = 8
 text = "LEADERBOARD"
-flat = true
 
 [connection signal="button_up" from="start_game" to="." method="_on_start_game_button_up"]
 [connection signal="pressed" from="start_game" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="leader_board" to="." method="_on_leader_board_pressed"]

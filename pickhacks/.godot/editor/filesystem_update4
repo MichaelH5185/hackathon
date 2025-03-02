@@ -15,3 +15,7 @@ res://selection.tscn
 res://game_man.gd
 res://game_man.tscn
 res://scenes/test_icon.gd
+res://scenes/scoreboard.tscn
+res://scenes/scoreboard.gd
+res://scenes/winner.gd
+res://spikey_boy.gd

@@ -37,7 +37,7 @@ func _ready() ->void:
 
 func randomizeLocation(pos, plane):
 	if plane == "x":
-		pos = randi() % 251 + 175
+		pos = randi() % 451 + 300
 	else:
 		pos = -(randi() % 75 + 15)
 	return pos

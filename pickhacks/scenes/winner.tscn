@@ -1,17 +1,70 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4f8ebux2pjhe"]
+[gd_scene load_steps=5 format=3 uid="uid://c4f8ebux2pjhe"]
 
-[ext_resource type="Texture2D" uid="uid://cfbiflnidrnpk" path="res://CONGRATULATIONS! YOU HAVE COMPLETED YOUR DEGREE!.png" id="1_6ng24"]
+[ext_resource type="Script" path="res://scenes/winner.gd" id="1_8h2vy"]
+[ext_resource type="Texture2D" uid="uid://yiinvevwkiuj" path="res://dark_havener.png" id="2_tdlge"]
+[ext_resource type="FontFile" uid="uid://d25arwb2y148n" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="3_6trmx"]
+[ext_resource type="Texture2D" uid="uid://cvbmpgp5sw3s1" path="res://degree.png" id="4_cgueb"]
 
 [node name="Winner" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_8h2vy")
+
+[node name="DarkHavener" type="Sprite2D" parent="."]
+scale = Vector2(0.866667, 0.866667)
+texture = ExtResource("2_tdlge")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2, -4)
-scale = Vector2(0.496771, 0.552917)
-texture = ExtResource("1_6ng24")
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -137.0
+offset_top = -76.0
+offset_right = 129.0
+offset_bottom = -41.0
+theme_override_fonts/font = ExtResource("3_6trmx")
+theme_override_font_sizes/font_size = 16
+text = "Congratulations on
+Graduation!"
+
+[node name="Degree" type="Sprite2D" parent="."]
+position = Vector2(79, 12)
+scale = Vector2(0.099375, 0.099375)
+texture = ExtResource("4_cgueb")
+
+[node name="Job" type="Button" parent="."]
+layout_mode = 0
+offset_left = -115.0
+offset_top = -35.0
+offset_right = -36.0
+offset_bottom = -4.0
+theme_override_fonts/font = ExtResource("3_6trmx")
+theme_override_font_sizes/font_size = 8
+text = "Get A Job"
+
+[node name="try" type="Button" parent="."]
+layout_mode = 0
+offset_left = -114.0
+offset_top = 3.0
+offset_right = -35.0
+offset_bottom = 34.0
+theme_override_fonts/font = ExtResource("3_6trmx")
+theme_override_font_sizes/font_size = 8
+text = "Try Again"
+
+[node name="Log Score" type="Button" parent="."]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 40.0
+offset_right = -33.0
+offset_bottom = 71.0
+theme_override_fonts/font = ExtResource("3_6trmx")
+theme_override_font_sizes/font_size = 8
+text = "Log Score"
+
+[connection signal="pressed" from="Job" to="." method="_on_job_pressed"]
+[connection signal="pressed" from="try" to="." method="_on_try_pressed"]
+[connection signal="pressed" from="Log Score" to="." method="_on_log_score_pressed"]

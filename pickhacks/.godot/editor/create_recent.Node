@@ -1,11 +1,12 @@
-Node
-OptionButton
-Control
+Popup
 Button
 Label
 Camera2D
-CollisionShape2D
 Sprite2D
+Node
+OptionButton
+Control
+CollisionShape2D
 Area2D
 CollisionPolygon2D
 ParallaxLayer

@@ -14,17 +14,14 @@ var dif = 0
 func _ready():
 	dif = GameMan.get_diff_level()
 	if dif == 1: 
-		print("Bach")
 		speed = 1.5
 		time_mult = 75
 		parallax_background.set_winning_score(100)
 	elif dif == 2:
-		print("Mast")
 		speed = 2
 		time_mult = 50
 		parallax_background.set_winning_score(75)
 	else: 
-		print("Phd")
 		speed = 2.5 
 		time_mult = 35
 		parallax_background.set_winning_score(50)

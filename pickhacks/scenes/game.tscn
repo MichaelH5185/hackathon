@@ -518,6 +518,11 @@ sources/1 = SubResource("TileSetAtlasSource_ocvpe")
 [node name="game" type="Node2D"]
 script = ExtResource("1_pe0ea")
 
+[node name="Sky" type="Sprite2D" parent="."]
+position = Vector2(307.75, -295.5)
+scale = Vector2(7.32902, 11.85)
+texture = ExtResource("12_8kwn3")
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_ik885")
 format = 2
@@ -586,8 +591,3 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(564, -17)
 collision_layer = 8
 collision_mask = 2
-
-[node name="Sky" type="Sprite2D" parent="."]
-position = Vector2(307.75, -295.5)
-scale = Vector2(7.32902, 11.85)
-texture = ExtResource("12_8kwn3")
