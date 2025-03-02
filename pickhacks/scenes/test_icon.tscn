@@ -4,19 +4,19 @@
 [ext_resource type="Texture2D" uid="uid://bsydvuo5i0y3o" path="res://brackeys_platformer_assets/pxArt__2_-removebg-preview.png" id="1_sftch"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1el1k"]
-size = Vector2(6, 8)
+size = Vector2(9, 14)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_0e20f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0.9375, -1.38458)
-scale = Vector2(0.0149027, 0.0149027)
+position = Vector2(2.9375, -4.33835)
+scale = Vector2(0.024635, 0.024635)
 texture = ExtResource("1_sftch")
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -2)
+position = Vector2(2.5, -5)
 shape = SubResource("RectangleShape2D_1el1k")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
