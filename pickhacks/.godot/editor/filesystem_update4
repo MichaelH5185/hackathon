@@ -11,3 +11,5 @@ res://brackeys_platformer_assets/music/game.gd
 res://game.gd
 res://node_2d.gd
 res://scenes/fail.tscn
+res://scripts/player.gd
+res://scenes/winner.tscn
