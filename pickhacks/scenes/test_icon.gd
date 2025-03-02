@@ -8,5 +8,5 @@ func _on_body_entered(body) -> void:
 
 func _process(delta: float) -> void:
 	position.x -= speed
-	if position.x < -200:
-		position.x = 200
+	#if position.x < -200:
+		#position.x = 200

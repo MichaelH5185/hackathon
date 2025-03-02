@@ -3,3 +3,8 @@ res://scripts/parallax_background.gd
 res://scenes/player.tscn
 res://scenes/test_icon.tscn
 res://scenes/home_page.tscn
+res://scenes/test_icon.gd
+res://spikey_boy.tscn
+res://scripts/game_manager.gd
+res://spikey_boy.gd
+res://brackeys_platformer_assets/music/game.gd

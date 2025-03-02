@@ -6,7 +6,7 @@ extends Node2D
 
 func _process(delta: float):
 	tile_map.position.x -= speed
-	if tile_map.position.x < -270:
+	if tile_map.position.x < -300:
 		tile_map.position.x = 0
 	
 #func _change_tile_map():

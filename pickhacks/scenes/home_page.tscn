@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dta0csrl55af0"]
 
 [ext_resource type="Script" path="res://control.gd" id="1_yoqch"]
-[ext_resource type="Texture2D" uid="uid://ch0hkv14d1f65" path="res://pxArt (3).png" id="2_lcahf"]
+[ext_resource type="Texture2D" uid="uid://bijup3qa1ywag" path="res://darkness_arisen.png" id="2_b7mli"]
 [ext_resource type="FontFile" uid="uid://d38nb74egthlt" path="res://brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="3_rtoqo"]
 [ext_resource type="FontFile" uid="uid://d25arwb2y148n" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="4_d3e7p"]
 
@@ -12,10 +12,10 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_yoqch")
 
-[node name="PxArt(3)" type="Sprite2D" parent="."]
-position = Vector2(590, 9)
-scale = Vector2(0.555, 0.555)
-texture = ExtResource("2_lcahf")
+[node name="DarknessArisen" type="Sprite2D" parent="."]
+position = Vector2(-8, -16)
+scale = Vector2(0.265278, 0.265278)
+texture = ExtResource("2_b7mli")
 
 [node name="start_game" type="Button" parent="."]
 layout_mode = 0
