@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://dyoh5jie0bd3q"
-=======
-uid="uid://ba06c7pp2gn5x"
->>>>>>> c33f4bb (attempting to merge)
-path="res://.godot/imported/pxArt.png-d194a10d2e998735ee5773f47b21d71a.ctex"
+uid="uid://cfbiflnidrnpk"
+path="res://.godot/imported/CONGRATULATIONS! YOU HAVE COMPLETED YOUR DEGREE!.png-50c4653982080b53b8590781af1f659e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pixel_art/pxArt.png"
-dest_files=["res://.godot/imported/pxArt.png-d194a10d2e998735ee5773f47b21d71a.ctex"]
+source_file="res://CONGRATULATIONS! YOU HAVE COMPLETED YOUR DEGREE!.png"
+dest_files=["res://.godot/imported/CONGRATULATIONS! YOU HAVE COMPLETED YOUR DEGREE!.png-50c4653982080b53b8590781af1f659e.ctex"]
 
 [params]
 

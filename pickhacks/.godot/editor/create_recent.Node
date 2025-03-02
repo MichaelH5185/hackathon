@@ -1,24 +1,16 @@
-<<<<<<< HEAD
+
 Control
 Button
 Label
 Camera2D
-=======
 Sprite2D
+Control
 ParallaxLayer
 ParallaxBackground
 Node2D
->>>>>>> 13e2894f6b47a39c66a3d692a07cfb24c5f615f0
 Node
-Node2D
 CollisionShape2D
 Area2D
-<<<<<<< HEAD
-ParallaxLayer
-ParallaxBackground
-=======
-Label
->>>>>>> 13e2894f6b47a39c66a3d692a07cfb24c5f615f0
 StaticBody2D
 AnimatedSprite2D
 TileMap
