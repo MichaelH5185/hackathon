@@ -1,5 +1,4 @@
-res://scenes/game.tscn
-res://scripts/parallax_background.gd
 res://scenes/player.tscn
 res://scenes/test_icon.tscn
 res://scenes/home_page.tscn
+res://scenes/game.tscn
