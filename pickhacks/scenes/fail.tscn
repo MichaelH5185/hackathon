@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://swnuh775cgy"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_sxv8e"]
+[ext_resource type="Texture2D" uid="uid://bv54ilg7lctw1" path="res://scenes/image.png" id="2_u8v7n"]
+[ext_resource type="FontFile" uid="uid://d25arwb2y148n" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="3_5irk1"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_sxv8e")
+
+[node name="Image" type="Sprite2D" parent="."]
+position = Vector2(1, 0)
+scale = Vector2(0.482278, 0.482278)
+texture = ExtResource("2_u8v7n")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -141.0
+offset_top = -77.0
+offset_right = 77.0
+offset_bottom = -54.0
+theme_override_fonts/font = ExtResource("3_5irk1")
+text = "CONGRATS! You've  been
+Accepted!"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -21.0
+offset_top = -52.0
+offset_right = 197.0
+offset_bottom = -29.0
+theme_override_fonts/font = ExtResource("3_5irk1")
+theme_override_font_sizes/font_size = 8
+text = "... to Mizzou"
+
+[node name="Button" type="Button" parent="."]
+offset_left = -68.0
+offset_top = 28.0
+offset_right = 70.0
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("3_5irk1")
+theme_override_font_sizes/font_size = 8
+text = "Accept Your Fate"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,6 +1,7 @@
 extends Area2D
 
 @onready var game_manager: Node = %Game_manager
+@onready var game: Node2D = $".."
 
 var s = 0.8
 
@@ -14,7 +15,8 @@ func _process(delta: float) -> void:
 		position.x = 250
 
 func _on_body_entered(body) -> void:
-	game_manager.decrease_gpa(2)# Gives them a D
+	game_manager.decrease_gpa(0)# Gives them a D
 	print("hit me")
 	position.x = 250
+	game.reset_game()
 	

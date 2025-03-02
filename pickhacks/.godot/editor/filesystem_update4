@@ -1,12 +1,13 @@
+res://scenes/game.tscn
+res://scripts/parallax_background.gd
 res://scenes/player.tscn
 res://scenes/test_icon.tscn
 res://scenes/home_page.tscn
-<<<<<<< HEAD
 res://scenes/test_icon.gd
 res://spikey_boy.tscn
 res://scripts/game_manager.gd
 res://spikey_boy.gd
 res://brackeys_platformer_assets/music/game.gd
-=======
-res://scenes/game.tscn
->>>>>>> c1ba7f5af12ef1c6ad8dee5b2dd3da4cf0314424
+res://game.gd
+res://node_2d.gd
+res://scenes/fail.tscn

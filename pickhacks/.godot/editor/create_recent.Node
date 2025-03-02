@@ -1,23 +1,12 @@
-CollisionShape2D
-<<<<<<< HEAD
-CollisionPolygon2D
-Sprite2D
-Area2D
-Label
-=======
-Sprite2D
-Area2D
->>>>>>> c1ba7f5af12ef1c6ad8dee5b2dd3da4cf0314424
-Control
 Button
+Label
 Camera2D
+CollisionShape2D
+Sprite2D
+Area2D
+CollisionPolygon2D
+Control
 Control
 ParallaxLayer
 ParallaxBackground
 Node2D
-Node
-StaticBody2D
-<<<<<<< HEAD
-=======
-AnimatedSprite2D
->>>>>>> c1ba7f5af12ef1c6ad8dee5b2dd3da4cf0314424

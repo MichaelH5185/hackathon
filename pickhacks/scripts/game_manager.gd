@@ -19,4 +19,12 @@ func get_speed() -> float:
 func decrease_gpa(grade:int):
 	gpa = (gpa*16 + grade*3)/18 
 	gpa_label.text = "GPA: " + str(round(gpa*10.0)/10.0)
-	
+	if((round(gpa*10.0)/10) < 2.0):
+		var game_scene = ResourceLoader.load("res://scenes/fail.tscn")
+		if game_scene:
+			get_tree().change_scene_to_packed(game_scene)
+		else: 
+			printerr("Connection Error Fail")
+func increase_gpa(grade:int):
+	gpa = (gpa*16 + grade*3)/18
+	gpa_label.text = "GPA: " + str(round(gpa*10.0)/10.0)
