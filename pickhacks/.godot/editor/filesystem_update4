@@ -1,11 +1,5 @@
 res://scenes/game.tscn
+res://scripts/parallax_background.gd
 res://scenes/player.tscn
 res://scenes/test_icon.tscn
-<<<<<<< HEAD
 res://scenes/home_page.tscn
-res://control.gd
-=======
-res://scripts/game_manager.gd
-res://scripts/parallax_background.gd
-res://scenes/winner.tscn
->>>>>>> c33f4bb (attempting to merge)

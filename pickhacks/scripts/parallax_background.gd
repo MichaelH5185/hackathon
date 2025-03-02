@@ -5,7 +5,7 @@ extends ParallaxBackground
 
 @export var sky_speed = 0.1
 @export var background_width = 820
-@export var winning_score = 150
+@export var winning_score = 15
 
 var game_won = false
 
@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 	
 	parallax_layer_2.motion_offset -= Vector2(sky_speed, 0)
 
-	if parallax_layer_2.motion_offset.x <= -background_width:
+	if parallax_layer_2.motion_offset.x < -background_width:
 		parallax_layer_2.motion_offset.x += background_width
 
 	if game_manager.get_score() >= winning_score:
