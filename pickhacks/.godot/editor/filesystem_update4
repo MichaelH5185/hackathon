@@ -2,4 +2,8 @@ res://control.gd
 res://scenes/game.tscn
 res://scenes/player.tscn
 res://scenes/test_icon.tscn
+<<<<<<< HEAD
 res://scenes/home_page.tscn
+=======
+res://scripts/parallax_background.gd
+>>>>>>> 13e2894f6b47a39c66a3d692a07cfb24c5f615f0
