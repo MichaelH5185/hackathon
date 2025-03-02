@@ -2,7 +2,7 @@ extends Area2D
 
 @onready var game: Node2D = $".."
 @onready var game_manager: Node = %Game_manager
-var speed = 0.8
+var speed = 0
 var incrementer = 0
 var prev_pos = 0
 var curr_pos = 0
@@ -14,10 +14,12 @@ func _on_body_entered(body) -> void:
 		curr_pos = randomizeLocation(position.x, "x")
 		print(str(curr_pos))
 	position.x = curr_pos
+	game_manager.increase_gpa(4)
 	prev_pos = curr_pos
 	position.y = randomizeLocation(position.y, "y"); 
 
 func _process(delta: float) -> void:
+	speed = game_manager.get_speed()
 	position.x -= speed
 	if position.x < -200:
 		print("voided")

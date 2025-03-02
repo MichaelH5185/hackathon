@@ -5,7 +5,7 @@ extends ParallaxBackground
 
 @export var sky_speed = 0.1
 @export var background_width = 820
-@export var winning_score = 15
+@export var winning_score = 150
 
 var game_won = false
 

@@ -10,6 +10,7 @@ func _ready() -> void:
 	#s = game_manager.get_speed()
 
 func _process(delta: float) -> void:
+	s = game_manager.get_speed()
 	position.x -= s
 	if(position.x < -270):
 		position.x = 250

@@ -1,8 +1,9 @@
 extends Node
 
 var score = 0; 
-var speed = 0.8;
+var speed = 1.5;
 var gpa = 4.0;
+var time = 0;
 @onready var score_label: Label = %score_label
 @onready var gpa_label: Label = %gpa_label
 
@@ -14,10 +15,10 @@ func get_score() -> int:
 	return score
 
 func get_speed() -> float:
-	return speed;
+	return (speed+(speed*time));
 	
 func decrease_gpa(grade:int):
-	gpa = (gpa*16 + grade*3)/18 
+	gpa = (gpa*15 + grade*3)/18 
 	gpa_label.text = "GPA: " + str(round(gpa*10.0)/10.0)
 	if((round(gpa*10.0)/10) < 2.0):
 		var game_scene = ResourceLoader.load("res://scenes/fail.tscn")
@@ -26,5 +27,7 @@ func decrease_gpa(grade:int):
 		else: 
 			printerr("Connection Error Fail")
 func increase_gpa(grade:int):
-	gpa = (gpa*16 + grade*3)/18
+	gpa = (gpa*15 + grade*3)/18
 	gpa_label.text = "GPA: " + str(round(gpa*10.0)/10.0)
+func _process(delta: float) -> void:
+	time += delta/50
