@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://rtnh1hq518bt"]
+[gd_scene load_steps=12 format=3 uid="uid://rtnh1hq518bt"]
 
 [ext_resource type="Texture2D" uid="uid://bkq7hotqg2qvw" path="res://brackeys_platformer_assets/sprites/world_tileset.png" id="1_1lt05"]
 [ext_resource type="Texture2D" uid="uid://brnwabce8qscq" path="res://pixel_art/Havener_pix.png" id="1_7agrl"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c7bcjq34w0kkl" path="res://scenes/test_icon.tscn" id="3_orsjh"]
 [ext_resource type="FontFile" uid="uid://d25arwb2y148n" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="4_578xl"]
 [ext_resource type="Script" path="res://scripts/parallax_background.gd" id="5_8lvbb"]
+[ext_resource type="Texture2D" uid="uid://ch0hkv14d1f65" path="res://pxArt (3).png" id="7_gih35"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="8_2ih01"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v53oa"]
@@ -183,9 +184,16 @@ script = ExtResource("5_8lvbb")
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(58.5, -77.25)
+position = Vector2(1170, -79)
 scale = Vector2(0.511667, 0.511667)
 texture = ExtResource("1_7agrl")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(407, -64)
+scale = Vector2(0.405333, 0.3525)
+texture = ExtResource("7_gih35")
 
 [node name="Game_manager" type="Node" parent="."]
 unique_name_in_owner = true
