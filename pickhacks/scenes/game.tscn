@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 [gd_scene load_steps=14 format=3 uid="uid://rtnh1hq518bt"]
+=======
+[gd_scene load_steps=11 format=3 uid="uid://rtnh1hq518bt"]
+>>>>>>> c33f4bb (attempting to merge)
 
 [ext_resource type="Texture2D" uid="uid://bkq7hotqg2qvw" path="res://brackeys_platformer_assets/sprites/world_tileset.png" id="1_1lt05"]
-[ext_resource type="Texture2D" uid="uid://brnwabce8qscq" path="res://pixel_art/Havener_pix.png" id="1_7agrl"]
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_pe0ea"]
 [ext_resource type="PackedScene" uid="uid://ccgkccx1wtwdp" path="res://scenes/player.tscn" id="2_ti2ga"]
 [ext_resource type="Texture2D" uid="uid://dyoh5jie0bd3q" path="res://pixel_art/pxArt.png" id="3_3gpr7"]
@@ -525,13 +528,6 @@ layer_0/tile_data = PackedInt32Array(1, 524289, 6, 65535, 524289, 6, 65533, 5242
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 script = ExtResource("5_8lvbb")
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(1170, -79)
-scale = Vector2(0.511667, 0.511667)
-texture = ExtResource("1_7agrl")
-
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
@@ -542,8 +538,6 @@ texture = ExtResource("7_gih35")
 [node name="Game_manager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("8_2ih01")
-
-[node name="Node" type="Node" parent="Game_manager"]
 
 [node name="Area2D" parent="." instance=ExtResource("3_orsjh")]
 position = Vector2(245, -17)

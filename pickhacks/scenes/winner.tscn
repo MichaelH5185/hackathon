@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4f8ebux2pjhe"]
+
+[ext_resource type="Texture2D" uid="uid://cfbiflnidrnpk" path="res://CONGRATULATIONS! YOU HAVE COMPLETED YOUR DEGREE!.png" id="1_6ng24"]
+
+[node name="Winner" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, -4)
+scale = Vector2(0.496771, 0.552917)
+texture = ExtResource("1_6ng24")
